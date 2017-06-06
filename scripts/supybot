@@ -139,6 +139,11 @@ def main():
                 print('raise an exception, but freaking-a, it was a string')
                 print('exception.  People who raise string exceptions should')
                 print('die a slow, painful death.')
+
+    # If we have exit and we still have plugins, close them.
+    for irc in world.ircs:
+        irc.die()
+
     httpserver.stopServer()
     now = time.time()
     seconds = now - world.startedAt

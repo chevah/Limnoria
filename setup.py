@@ -176,7 +176,7 @@ setup(
     # Metadata
     name='limnoria',
     provides=['supybot'],
-    version=version,
+    version=version + '.dev1',
     author='Valentin Lorentz',
     url='https://github.com/ProgVal/Limnoria',
     author_email='progval+limnoria@progval.net',
